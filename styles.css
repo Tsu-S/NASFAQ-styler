@@ -1,9 +1,3 @@
-html{
-    background-color: #2e2e2e;
-    background-image: url(images/rivets.png);
-    background-attachment: fixed;
-}
-
 @font-face {
     font-family: Chicago;
     src: url(fonts/chicago.ttf);
@@ -14,19 +8,24 @@ html{
     src: url(fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
 }
 
-body{
-    width: 800px;
-    margin: auto;
+html{
+    background-color: #2e2e2e;
+    background-image: url(images/rivets.png);
+    background-attachment: fixed;
 }
+
 hr{
     border: none;
     height: 20px;
     margin: 0;
 }
+
 section, header, footer{
     background-color: rgba(250, 250, 250, 0.8);
     padding: 20px 30px;
-    margin-bottom: 0px
+    margin-bottom: 0px;
+    width: 800px;
+    margin: auto;
 }
 
 p, form, form input{
@@ -42,6 +41,10 @@ header p, h1{
     margin: 0;
 }
 
+header{
+    text-align:center;
+}
+
 h1{
     font-size: 30pt;
 }
@@ -51,14 +54,30 @@ a{
     text-decoration: underline;
 }
 
-#nasfaq-box {
-    max-width:100%;
+.nasfaq-box {
+    width:1650px;
+    height:950px;
+}
+.nasfaq-box iframe  {
+    display:block;
+    width:1600px;
+    height:900px;
+    margin:auto;
+    border-width:3px;
+    border-color:#ffbce1;
+    border-style: solid;
 }
 
-form input {
+#values input {
     border-width: 2px;
     border-style:solid;
     border-color: #ffbce1;
+}
+
+#values input:focus{
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color:fuchsia;
 }
 
 button {
@@ -73,6 +92,7 @@ button {
     font-family: 'Chicago';
     font-size: 14px;
 }
+
 button:hover{
     background-color:rgba(255, 188, 225, 0.3);
 }
