@@ -16,9 +16,11 @@
         <hr>
         <main>
             <section class="nasfaq-box">
+                <iframe src="https://nasfaq.biz/market"></iframe>
             </section>
+            <hr>
             <section>
-            <form id="form">                   
+            <form id="values">                   
                 <label for="color1">Primary Color:</label>
                 <br>
                 <input type="text" id="color1" name="color1">
@@ -36,7 +38,23 @@
                 <input type="text" id="backgroundurl" name="backgroundurl">
                 <br>
             </form>
-            <button onclick="getForm()">generate css</button>
+            <form id="styles">
+                <input type="checkbox" id="market" name="market" value="Market">
+                <label for="market"> Market</label><br>
+                <input type="checkbox" id="activity" name="activity" value="activity">
+                <label for="activity"> Activity</label><br>
+                <input type="checkbox" id="floor" name="floor" value="floor">
+                <label for="floor"> Floor</label><br>
+                <input type="checkbox" id="info" name="info" value="info">
+                <label for="info"> Info</label><br>
+                <input type="checkbox" id="leaderboard" name="leaderboard" value="leaderboard">
+                <label for="leaderboard"> Leaderboard</label><br>
+                <input type="checkbox" id="supers" name="supers" value="supers">
+                <label for="supers"> Supers</label><br>
+                <input type="checkbox" id="benchmark" name="benchmark" value="benchmark">
+                <label for="benchmark"> Benchmark</label><br>
+            </form> 
+            <button onclick="getValues(), getStyles()" >generate css</button>
             </section>
             <section>
                 <p id="gencss"></p>
