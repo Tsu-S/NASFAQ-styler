@@ -1,0 +1,78 @@
+html{
+    background-color: #2e2e2e;
+    background-image: url(images/rivets.png);
+    background-attachment: fixed;
+}
+
+@font-face {
+    font-family: Chicago;
+    src: url(fonts/chicago.ttf);
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url(fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+body{
+    width: 800px;
+    margin: auto;
+}
+hr{
+    border: none;
+    height: 20px;
+    margin: 0;
+}
+section, header, footer{
+    background-color: rgba(250, 250, 250, 0.8);
+    padding: 20px 30px;
+    margin-bottom: 0px
+}
+
+p, form, form input{
+    color: #ffbce1;
+    font-family: 'WorkSans';
+    font-size: 14pt;
+}
+
+header p, h1{
+    color: #ffbce1;
+    font-family: 'Chicago';
+    font-size: 40pt;
+    margin: 0;
+}
+
+h1{
+    font-size: 30pt;
+}
+
+a{
+    color: #f1d4ff;
+    text-decoration: underline;
+}
+
+#nasfaq-box {
+    max-width:100%;
+}
+
+form input {
+    border-width: 2px;
+    border-style:solid;
+    border-color: #ffbce1;
+}
+
+button {
+    color:#ffbce1;
+    border-color: #ffbce1;
+    border-width: 3px;
+    background: none;
+
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Chicago';
+    font-size: 14px;
+}
+button:hover{
+    background-color:rgba(255, 188, 225, 0.3);
+}

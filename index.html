@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="xylophone">
+        <meta name="description" content="NASFAQ website CSS customizer.">
+        <link rel="icon" href="images/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <title>CSS</title>
+    </head>
+    <body>
+        <header>
+            <p>nasfaq css customizer</p>
+        </header>
+        <hr>
+        <main>
+            <section class="nasfaq-box">
+            </section>
+            <section>
+            <form id="form">                   
+                <label for="color1">Primary Color:</label>
+                <br>
+                <input type="text" id="color1" name="color1">
+                <br>
+                <label for="color2">Secondary Color:</label>
+                <br>
+                <input type="text" id="color2" name="color2">
+                <br>
+                <label for="color3">Teritary Color:</label>
+                <br>
+                <input type="text" id="color3" name="color3">
+                <br>
+                <label for="backgroundurl">Background Image (URL)</label>
+                <br>
+                <input type="text" id="backgroundurl" name="backgroundurl">
+                <br>
+            </form>
+            <button onclick="getForm()">generate css</button>
+            </section>
+            <section>
+                <p id="gencss"></p>
+            </section>
+            <hr>
+            <section>
+            <h1>how to:</h1>
+            <p>1. Install Stylus as a browser extension. (You can probably use any custom CSS browser addon.)</p>
+            <p>2. Fill in the blank sections with rgba values and urls, and click "generate".</p>
+            <p>3. Copy-paste the generated CSS into your CSS addon you chose in step 1.</p>
+            </section>
+        </main>
+        <hr>
+        <footer>
+           <p> honkchama love </p>
+        </footer>
+    </body>
+</html>
