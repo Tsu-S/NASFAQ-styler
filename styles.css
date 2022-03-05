@@ -105,7 +105,7 @@ button:hover{
     white-space: pre-wrap;
 }
 
-img {
+#example {
     max-width: 800px;
     border-radius: 5px;
     border-width: 3px;
