@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="xylophone">
-        <meta name="description" content="NASFAQ website CSS customizer.">
+        <meta name="description" content="NASFAQ CSS customizer.">
         <link rel="icon" href="images/icon.png" type="image/x-icon">
         <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
@@ -11,14 +11,12 @@
     </head>
     <body>
         <header>
+            <a href = "https://nasfaq.biz/" target="_blank" rel="noopener noreferrer"><img src="images/icon.png"></a>
             <p>nasfaq css customizer</p>
+            <img src="images/miyatsuko.png">
         </header>
         <hr>
         <main>
-            <section class="nasfaq-box">
-                <iframe src="https://nasfaq.biz/market"></iframe>
-            </section>
-            <hr>
             <section>
             <form id="values">                   
                 <label for="color1">Primary Color:</label>
@@ -53,23 +51,35 @@
                 <label for="supers"> Supers</label><br>
                 <input type="checkbox" id="benchmark" name="benchmark" value="benchmark">
                 <label for="benchmark"> Benchmark</label><br>
+                <input type="checkbox" id="gacha" name="gacha" value="gacha">
+                <label for="gacha"> Gacha</label><br>
+                <input type="checkbox" id="auctions" name="auctions" value="auctions">
+                <label for="auctions"> Auctions</label><br>
+                <input type="checkbox" id="profile" name="profile" value="profile">
+                <label for="profile"> Profile</label><br>
+                <input type="checkbox" id="betting" name="betting" value="betting">
+                <label for="betting"> Betting</label><br>
             </form> 
-            <button onclick="getValues(), getStyles()" >generate css</button>
+            <button onclick="genCss()" >generate css</button>
             </section>
+            <hr>
             <section>
-                <p id="gencss"></p>
+                <span id="gencss"></span>
             </section>
             <hr>
             <section>
             <h1>how to:</h1>
-            <p>1. Install Stylus as a browser extension. (You can probably use any custom CSS browser addon.)</p>
-            <p>2. Fill in the blank sections with rgba values and urls, and click "generate".</p>
-            <p>3. Copy-paste the generated CSS into your CSS addon you chose in step 1.</p>
+            <p>1. Install <a href="https://github.com/openstyles/stylus/" target="_blank" rel="noopener noreferrer">Stylus</a> as a browser extension. (You can probably use any custom CSS browser addon, but this is what I use.)</p>
+            <p>2. Create a new style by clicking the extension icon, "Manage", and "Write new style".</p>
+            <p>3. Enter your desired colors (if any) into the <b>Color</b> inputs above, as either rgba values or hex codes. <br>Examples: <code>rgba(255, 255, 255, 0.9)</code>, <code>#ffffff</code></p>
+            <p>4. Enter your desired url (if any) into the <b>Background Image</b> input above. Ideally, the image should be a higher resolution than your screen, and it should be similar to the aspect ratio of the screen.<br> Examples: <code><a href="https://files.catbox.moe/vajwc6.png" target="_blank" rel="noopener noreferrer">https://files.catbox.moe/vajwc6.png</a></code></p>
+            <p>5. Check the boxes for the pages that you want css to be generated for, then click <b>"generate css".</b></p>
+            <p>6. Copy and paste the css into the new style you created in step 2. I recommend creating a new style for each page (market, activity, etc.), as well as a site-wide style for the background image, and then pasting the relevant css into each style. For reference, <a href = "images/reference.png" target="_blank" rel="noopener noreferrer">this</a> is how I organize my styles.</p>
             </section>
         </main>
         <hr>
         <footer>
-           <p> honkchama love </p>
+           <p> ms.honk and miyatsuko love </p>
         </footer>
     </body>
 </html>
