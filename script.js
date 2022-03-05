@@ -79,6 +79,7 @@ function genCss() {
     /*activity page*/
     if (activity == true) {
         activityoutput += "<b>/*Activity*/</b>\n\n";
+        activityoutput += "div.tabbed-view-select {\n\tpadding: 40px;\n\tbackground-color: rgba(46, 45, 49, 1);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
         if (color1.length > 0) {
             activityoutput += "div.tabbed-view-select .view-item.view-item-active::after, div.tabbed-view-select .view-item:hover::after {\n\tbackground: " + color1 + ";\n}\n\n";
             activityoutput += "div.tabbed-content .tabbed-content-container .tabbed-content-content {\n\tborder: 5px solid " + color1 + ";\n}\n\n";
@@ -123,6 +124,7 @@ function genCss() {
     /*info page*/
     if (info == true) {
         infooutput += "<b>/*Info*/</b>\n\n";
+        infooutput += "div.tabbed-view-select {\n\tpadding: 40px;\n\tbackground-color: rgba(46, 45, 49, 1);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
         if (color1.length > 0) {
             infooutput += "div.tabbed-view-select .view-item.view-item-active::after, div.tabbed-view-select .view-item:hover::after {\n\tbackground: " + color1 + ";\n}\n\n";
             infooutput += ".container .container-content .container-section .section-content {\n\tborder: 5px solid " + color1 + ";\n}\n\n";
@@ -172,6 +174,8 @@ function genCss() {
     /*supers page*/
     if (supers == true) {
         supersoutput += "<b>/*Superchats*/</b>\n\n";
+        supersoutput += ".superchats-billboard .superchat-settings {\n\tpadding: 10px;\n\tbackground-color: rgba(46, 45, 49, 1);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
+        supersoutput += ".superchats-billboard .superchats-view-select {\n\tpadding: 40px;\n\tbackground-color: rgba(46, 45, 49, 1);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
         supersoutput += ".dark .superchats-billboard {\n\tbackground: none;\n}\n\n";
         supersoutput += ".dark .superchats-billboard .superchats-disclaimer {\n\tdisplay: none;\n}\n\n";
         supersoutput += ".sc-ranking-table td.table-spacer {\n\tdisplay: none;\n}\n\n";
@@ -269,6 +273,7 @@ function genCss() {
     /*profile page*/
     if (profile == true) {
         profileoutput += "<b>/*Profile*/</b>\n\n";
+        profileoutput += ".profile-view-select {\n\tpadding: 40px;\n\tbackground-color: rgba(46, 45, 49, 1);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
         if (color1.length > 0) {
             profileoutput += ".profile-view-select .profile-view-tab.active::after {\n\tbackground: " + color1 + ";\n}\n\n";
             profileoutput += ".container .container-content .container-section .section-content {\n\tborder: 5px solid " + color1 + ";\n}\n\n";
