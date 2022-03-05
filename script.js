@@ -34,7 +34,7 @@ function genCss() {
     if (market == true) {
         marketoutput += "<b>/*Market*/</b>\n\n";
         marketoutput += "div.board-outer .compact-board-container::after {\n\tdisplay: none;\n}\n\n";
-        marketoutput += "div.board-outer .compact-board-container table {\n\twidth: calc(100vw - 120px)\n}\n\n";
+        marketoutput += "div.board-outer .compact-board-container table {\n\twidth: calc(100vw - 250px)\n}\n\n";
         marketoutput += ".dark div.coin-searchbar {\n\tbackground: rgba(46, 45, 49, 1);\n}\n\n";
         marketoutput += "div.board-outer .compact-board-container {\n\tpadding: 10px 40px 30px 40px;\n\tbackground-color: rgba(46, 45, 49, 1);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
         marketoutput += ".dark .auto-trader-editor .auto-trader-inner {\n\tbackground: rgba(25, 25, 25, 1);\n}\n\n";
