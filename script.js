@@ -35,9 +35,9 @@ function genCss() {
         marketoutput += "<b>/*Market*/</b>\n\n";
         marketoutput += "div.board-outer .compact-board-container::after {\n\tdisplay: none;\n}\n\n";
         marketoutput += "div.board-outer .compact-board-container table {\n\twidth: calc(100vw - 120px)\n}\n\n";
-        marketoutput += ".dark div.coin-searchbar {\n\tbackground: rgba(46, 45, 49, 0.8);\n}\n\n";
-        marketoutput += "div.board-outer .compact-board-container {\n\tpadding: 10px 40px 30px 40px;\n\tbackground-color: rgba(46, 45, 49, 0.8);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
-        marketoutput += ".dark .auto-trader-editor .auto-trader-inner {\n\tbackground: rgba(25, 25, 25, 0.8);\n}\n\n";
+        marketoutput += ".dark div.coin-searchbar {\n\tbackground: rgba(46, 45, 49, 1);\n}\n\n";
+        marketoutput += "div.board-outer .compact-board-container {\n\tpadding: 10px 40px 30px 40px;\n\tbackground-color: rgba(46, 45, 49, 1);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
+        marketoutput += ".dark .auto-trader-editor .auto-trader-inner {\n\tbackground: rgba(25, 25, 25, 1);\n}\n\n";
         marketoutput += ".dark div.board-outer .compact-board-container table th, .dark div.board-outer .compact-board-container table tr {\n\tbackground: none;\n}\n\n"
         
         if (color1.length > 0) {
@@ -99,7 +99,7 @@ function genCss() {
     if (floor == true) {
         flooroutput += "<b>/*Floor*/</b>\n\n";
         flooroutput += ".dark div.room-container,.dark div.room-select .room-item, .dark div.room-select .room-list-header {\n\tbackground: none;\n}\n\n";
-        flooroutput += ".dark div.room-select{\n\tbackground: rgba(46, 45, 49, 0.8);\n}\n\n";
+        flooroutput += ".dark div.room-select{\n\tbackground: rgba(46, 45, 49, 1);\n}\n\n";
         if (color1.length > 0) {
             flooroutput += ".dark .toggle-message-input {\n\tcolor: " + color1 + ";\n}\n\n";
             flooroutput += ".submit-message-button {\n\tcolor: #E1D8EF;\n\tborder: 2px solid " + color1 + ";\n}\n\n";
@@ -175,11 +175,11 @@ function genCss() {
         supersoutput += ".dark .superchats-billboard {\n\tbackground: none;\n}\n\n";
         supersoutput += ".dark .superchats-billboard .superchats-disclaimer {\n\tdisplay: none;\n}\n\n";
         supersoutput += ".sc-ranking-table td.table-spacer {\n\tdisplay: none;\n}\n\n";
-        supersoutput += ".superchats-billboard .superchats-leaders {\n\tbackground-color: rgba(46, 45, 49, 0.8);\n\tpadding: 20px;\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
-        supersoutput += ".dark .superchat-item {\n\tbackground-color: rgba(46, 45, 49, 0.8);\n}\n\n";
-        supersoutput += ".dark .superchat-item .superchat-list-container {\n\tbackground: rgba(25, 25, 25, 0.8);\n}\n\n";
-        supersoutput += "table.superchat-feed{\n\tbackground-color: rgba(46, 45, 49, 0.8);\n\tmargin: 10px;\n\tpadding: 5px;\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 5px;\n}\n\n";
-        supersoutput += ".sc-ranking-table {\n\tbackground-color: rgba(46, 45, 49, 0.8);\n\tpadding: 5px;\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 5px;\n}\n\n";
+        supersoutput += ".superchats-billboard .superchats-leaders {\n\tbackground-color: rgba(46, 45, 49, 1);\n\tpadding: 20px;\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
+        supersoutput += ".dark .superchat-item {\n\tbackground-color: rgba(46, 45, 49, 1);\n}\n\n";
+        supersoutput += ".dark .superchat-item .superchat-list-container {\n\tbackground: rgba(25, 25, 25, 1);\n}\n\n";
+        supersoutput += "table.superchat-feed{\n\tbackground-color: rgba(46, 45, 49, 1);\n\tmargin: 10px;\n\tpadding: 5px;\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 5px;\n}\n\n";
+        supersoutput += ".sc-ranking-table {\n\tbackground-color: rgba(46, 45, 49, 1);\n\tpadding: 5px;\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 5px;\n}\n\n";
         if (color1.length > 0) {
             supersoutput += ".dark .superchats-billboard .superchats-title {\n\tcolor: " + color1 + ";\n}\n\n";
             supersoutput += ".dark .superchats-billboard .superchats-description {\n\tcolor: " + color1 + ";\n}\n\n";
@@ -205,7 +205,7 @@ function genCss() {
 
     /*benchmark page*/
     if (benchmark == true) {
-        bmoutput += ".benchmark-weights .benchmark-weights-list {\n\tpadding: 40px;\n\tbackground-color: rgba(46, 45, 49, 0.8);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
+        bmoutput += ".benchmark-weights .benchmark-weights-list {\n\tpadding: 40px;\n\tbackground-color: rgba(46, 45, 49, 1);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
         bmoutput += ".dark .benchmark-weights .benchmark-weights-list table thead th, .dark .benchmark-weights .benchmark-weights-list table thead th::after {\n\tbackground: none;\n}\n\n";
         bmoutput += ".benchmark-weights .benchmark-weights-list table tbody .coin {\n\tz-index: 0;\n}\n\n";
         bmoutput += ".benchmark-weights .benchmark-weights-list table thead th {\n\tposition: static;\n}\n\n";
@@ -225,7 +225,7 @@ function genCss() {
     /*gacha page*/
     if (gacha == true) {
         gachaoutput += "<b>/*Gacha*/</b>\n\n";
-        gachaoutput += ".gachaboard-outer table, .dark .gacha-container .gacha-panel .button-row, .dark .gacha-container .drop-container {\n\tbackground-color: rgba(46, 45, 49, 0.8);\n\tpadding: 20px;\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
+        gachaoutput += ".gachaboard-outer table, .dark .gacha-container .gacha-panel .button-row, .dark .gacha-container .drop-container {\n\tbackground-color: rgba(46, 45, 49, 1);\n\tpadding: 20px;\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
         gachaoutput += ".dark .gacha-container .gacha-panel .button-row, .dark .gacha-container .drop-container {\n\tpadding-bottom: 50px;\n}\n\n";
         if (color1.length > 0) {
             gachaoutput += ".dark .gacha-container .gacha-header-container .gacha-header-inner .gacha-header-title {\n\tcolor: " + color1 + ";\n}\n\n";
@@ -240,8 +240,8 @@ function genCss() {
     if (auctions == true) {
         auctionoutput += "<b>/*Gacha*/</b>\n\n";
         auctionoutput += ".dark .auction-history table thead tr td {\n\tbackground: none;\n}\n\n";
-        auctionoutput += ".dark .auction-history table {\n\tcolor: #fff;\n\tpadding: 40px;\n\tbackground-color: rgba(46, 45, 49, 0.8);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
-        auctionoutput += ".dark .create-auction-window {\n\tbackground: rgba(46, 45, 49, 0.8);\n}\n\n";
+        auctionoutput += ".dark .auction-history table {\n\tcolor: #fff;\n\tpadding: 40px;\n\tbackground-color: rgba(46, 45, 49, 1);\n\tbox-shadow: 0 7px 20px -6px #000;\n\tborder: 1px solid #4b4b4b;\n\tborder-radius: 10px;\n}\n\n";
+        auctionoutput += ".dark .create-auction-window {\n\tbackground: rgba(46, 45, 49, 1);\n}\n\n";
         if (color1.length > 0) {
             auctionoutput += ".create-auction-window .auction-item-select .auction-item-select-inner img:hover {\n\toutline: 2px solid " + color1 + ";\n}\n\n";
             auctionoutput += ".dark .create-auction-window .auction-item-input .expiration-outer input.expiration-time-input, div.dropdown-selected {\n\tborder: 1px solid " + color1 + ";\n}\n\n";
