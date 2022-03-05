@@ -26,23 +26,37 @@ section, header, footer{
     margin-bottom: 0px;
     width: 800px;
     margin: auto;
+    border-width: 3px;
+    border-color: #f19bca;
+    border-style:solid;
+    border-radius:5px;
 }
 
-p, form, form input{
-    color: #ffbce1;
+footer{
+    padding: 0px 30px;
+}
+
+p, form, form input, span{
+    color: #f19bca;
     font-family: 'WorkSans';
     font-size: 14pt;
 }
 
 header p, h1{
-    color: #ffbce1;
+    color: #f19bca;
     font-family: 'Chicago';
     font-size: 40pt;
     margin: 0;
 }
 
 header{
+    display:flex;
     text-align:center;
+}
+
+header img{
+    max-height: 100px;
+    max-width: 100px;
 }
 
 h1{
@@ -50,28 +64,18 @@ h1{
 }
 
 a{
-    color: #f1d4ff;
+    color: #df80b4;
     text-decoration: underline;
 }
 
-.nasfaq-box {
-    width:1650px;
-    height:950px;
-}
-.nasfaq-box iframe  {
-    display:block;
-    width:1600px;
-    height:900px;
-    margin:auto;
-    border-width:3px;
-    border-color:#ffbce1;
-    border-style: solid;
+code{
+    color: #df80b4;
 }
 
 #values input {
     border-width: 2px;
     border-style:solid;
-    border-color: #ffbce1;
+    border-color: #f19bca;
 }
 
 #values input:focus{
@@ -81,8 +85,8 @@ a{
 }
 
 button {
-    color:#ffbce1;
-    border-color: #ffbce1;
+    color:#f19bca;
+    border-color: #f19bca;
     border-width: 3px;
     background: none;
 
@@ -95,4 +99,8 @@ button {
 
 button:hover{
     background-color:rgba(255, 188, 225, 0.3);
+}
+
+#gencss {
+    white-space: pre-wrap;
 }
