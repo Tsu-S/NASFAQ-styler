@@ -85,7 +85,7 @@ function genCss() {
             activityoutput += ".dark .transaction-container .transaction-name {\n\tcolor: " + color1 + ";\n}\n\n";
             activityoutput += ".dark div.pagenav .page-select.active-page, .dark div.pagenav .page-select:hover {\n\tborder-color: " + color1 + ";\n}\n\n";
             if (color3.length > 0) {
-                activityoutput += "div.tabbed-content .tabbed-content-container .tabbed-content-background {\n\t: linear-gradient(135deg," + color1 * "," + color3 + ");\n}\n\n";
+                activityoutput += "div.tabbed-content .tabbed-content-container .tabbed-content-background {\n\tbackground: linear-gradient(135deg," + color1 * "," + color3 + ");\n}\n\n";
             }
         }
         if (color2.length > 0) {
@@ -301,11 +301,11 @@ function genCss() {
             if (color3.length > 0) {
                 bettingoutput += ".betting-container .betting-pools-container .betting-pool-item .betting-pool-background {\n\tbackground: linear-gradient(135deg," + color1 + "," + color3 + ");\n}\n\n";
                 bettingoutput += ".betting-container .betting-container-header .betting-header-inner {\n\tbackground: " + color3 + ";\n\tcolor: " + color1 + ";\n}\n\n";
-                bettingoutput += ".dark .betting-pool-container .betting-pool-header {\n\tcolor: " + color1 + ";\n\tbackground: " + color3 + ";\n\tborder-bottom: 2px solid #" + color1 + ";\n}\n\n";
+                bettingoutput += ".dark .betting-pool-container .betting-pool-header {\n\tcolor: " + color1 + ";\n\tbackground: " + color3 + ";\n\tborder-bottom: 2px solid " + color1 + ";\n}\n\n";
             }
             else {
                 bettingoutput += ".betting-container .betting-container-header .betting-header-inner {\n\tcolor: " + color1 + ";\n}\n\n";
-                bettingoutput += ".dark .betting-pool-container .betting-pool-header {\n\tcolor: " + color1 + ";\n\tborder-bottom: 2px solid #" + color1 + ";\n}\n\n"; 
+                bettingoutput += ".dark .betting-pool-container .betting-pool-header {\n\tcolor: " + color1 + ";\n\tborder-bottom: 2px solid " + color1 + ";\n}\n\n"; 
             }
         }
         else if (color3.length > 0) {
